@@ -14,11 +14,9 @@
 .PHONY: test build container push clean
 
 PROJECT_DIR=/app
-IMAGE_NAME=korolkov-public-evolution-serverless.cr.cloud.ru/datashim-csi-s3-goofys-s3fs-geesefs
-VERSION ?= v0.0.2
+IMAGE_NAME=korolkov-public-evolution-serverless.cr.cloud.ru/datashim-csi-s3-goofys-and-geesefs
+VERSION ?= v0.0.3
 REGISTRY_NAME=ctrox
-IMAGE_NAME=csi-s3
-VERSION ?= dev
 IMAGE_TAG=$(IMAGE_NAME):$(VERSION)
 FULL_IMAGE_TAG=$(IMAGE_TAG)
 TEST_IMAGE_TAG=$(IMAGE_NAME):test
